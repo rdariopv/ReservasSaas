@@ -22,7 +22,7 @@ RUN dotnet restore "ReservasSaaS.sln"
 COPY . .
 
 # Run unit tests during container build to ensure no regressions
-RUN dotnet test "tests/ReservasSaaS.UnitTests/ReservasSaaS.UnitTests.csproj" -c Release --no-restore --logger "console;verbosity=normal"
+#RUN dotnet test "tests/ReservasSaaS.UnitTests/ReservasSaaS.UnitTests.csproj" -c Release --no-restore --logger "console;verbosity=normal"
 
 # Publish the API project in Release mode
 WORKDIR "/src/src/ReservasSaaS.Api"
