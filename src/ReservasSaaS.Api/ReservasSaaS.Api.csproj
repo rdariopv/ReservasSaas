@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ReservasSaaS.Api</RootNamespace>
+    <AssemblyName>ReservasSaaS.Api</AssemblyName>
+    <UserSecretsId>reservas-saas-secrets-phase1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Hexagonal Architecture: Api references Application (Use Cases/Ports) and Infrastructure (Composition Root) -->
+    <ProjectReference Include="..\ReservasSaaS.Application\ReservasSaaS.Application.csproj" />
+    <ProjectReference Include="..\ReservasSaaS.Infrastructure\ReservasSaaS.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.18.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

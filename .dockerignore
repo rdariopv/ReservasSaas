@@ -1,0 +1,14 @@
+**/.git
+**/.vs
+**/.vscode
+**/bin
+**/obj
+**/node_modules
+**/dist
+**/*.user
+**/*.suo
+**/*.DotSettings.user
+.env
+.env.local
+Dockerfile*
+README.md

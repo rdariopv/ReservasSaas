@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>ReservasSaaS.Application</RootNamespace>
+    <AssemblyName>ReservasSaaS.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Hexagonal Architecture: Application references ONLY Domain -->
+    <ProjectReference Include="..\ReservasSaaS.Domain\ReservasSaaS.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAdmin" Version="3.7.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>

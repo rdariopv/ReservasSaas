@@ -1,0 +1,15 @@
+{
+  "emulators": {
+    "firestore": {
+      "port": 8080
+    },
+    "singleProjectMode": true,
+    "auth": {
+      "port": 9099
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    }
+  }
+}
