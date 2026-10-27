@@ -4,9 +4,8 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\rpardo\\.firebase\\reservassaas-d070e-firebase-adminsdk-fbsvc-0ec7f79628.json",
-        "FirebaseAuthentication__WebApiKey": "AIzaSyAndklRuGDPDi6OJKsDtNr-6DB-G1MolyM"
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      
       },
       "applicationUrl": "https://localhost:60941;http://localhost:60942"
     }
