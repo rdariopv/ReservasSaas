@@ -57,12 +57,12 @@ try
 
     app.UseCors("AllowAll");
 
-    if (app.Environment.IsDevelopment())
-    {
+    //if (app.Environment.IsDevelopment())
+   // {
         app.MapOpenApi();
         app.MapScalarApiReference();
        // Environment.SetEnvironmentVariable("FIREBASE_AUTH_EMULATOR_HOST","127.0.0.1:9099");
-    }
+    //}
 
     app.UseHttpsRedirection();
 
